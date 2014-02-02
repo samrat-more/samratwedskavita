@@ -34,7 +34,28 @@
       }
     });
     // Counter code ends
-    // var h = $('.core').outerHeight()
-    // $('.core').css
+
+    // Settings code
+    $('.settings .background-theme li a').on('click', function() {
+      var color = $(this).css('background');
+      console.log(color);
+      $('body').css('background', color);
+    });
+
+    $('.settings .background-pattern li a').on('click', function() {
+      var color = $(this).css('background');
+      console.log(color);
+      $('body').css('background', color);
+    });
+
+/*
+background:
+linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px
+*/
+
+    
   });
 }());
