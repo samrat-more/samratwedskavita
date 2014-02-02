@@ -1,6 +1,141 @@
 body {
-  background: red;
+  background: #e74c3c;
 }
-.chakra {
-  margin-top: -50%;
+
+.settings {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  padding: 5px 15px 25px 15px;
+  position: fixed;
+  top: 212px;
+  width: 250px;
+  z-index: 100;
+}
+
+.settings-icon {
+  background: #fff;
+  cursor: pointer;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  right: -38px;
+  width: 38px;
+}
+
+.settings-icon .glyphicon {
+  font-size: 25px;
+  padding: 8px 5px 5px 6px;
+}
+
+.background-theme,
+.background-pattern {
+  padding-left: 0;
+  width: 225px;
+}
+
+.settings li {
+  list-style-type: none;
+  list-style-position: outside;
+  float: left;
+  margin: 5px;
+}
+
+.settings li a {
+  display: block;
+  border-radius: 2px;
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+}
+
+.settings li a span{
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+/* colors from http://flatuicolors.com/ */
+.turquoise {
+  background: #1abc9c;
+}
+
+.emerald {
+  background: #2ecc71;
+}
+
+.peter-river {
+  background: #3498db;
+}
+
+.amethyst {
+  background: #9b59b6;
+}
+
+.wet-asphalt {
+  background: #34495e;
+}
+
+.green-sea {
+  background: #16a085;
+}
+
+.nephritis {
+  background: #27ae60;
+}
+
+.belize-hole {
+  background: #2980b9;
+}
+
+.wisteria {
+  background: #8e44ad;
+}
+
+.midnight-blue {
+  background: #2c3e50;
+}
+
+.sun-flower {
+  background: #f1c40f;
+}
+
+.carrot {
+  background: #e67e22;
+}
+
+.alizarin {
+  background: #e74c3c;
+}
+
+.orange {
+  background: #f39c12;
+}
+
+.pumpkin {
+  background: #d35400;
+}
+
+.pomegranate {
+  background: #c0392b;
+}
+
+.sk-hero {
+  font-family: 'Alex Brush', cursive;
+  font-size: 80px;
+  color: #fff;
+}
+
+.sk-hero-sub {
+  font-family: 'Alex Brush', cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
+.pattern-1 {
+  background: linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+              linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px;
 }
