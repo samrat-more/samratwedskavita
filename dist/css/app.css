@@ -213,3 +213,9 @@ body {
   background-color: rgba(0,0,0,.5);
   background-image: none;
 }
+
+/* Goolge map */
+#map-canvas {
+  height: 500px;
+  width: 100%;
+}
