@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/gallery.css" />
+    <link href="dist/css/app.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +22,7 @@
     <![endif]-->
     <script id="previewTmpl" type="text/x-jquery-tmpl">
       <div id="ib-img-preview" class="ib-preview">
-        <img src="${src}" alt="" class="ib-preview-img"/>
+        <img src="${src}" alt="" class="ib-preview-img img-responsive"/>
         <span class="ib-preview-descr" style="display:none;">${description}</span>
         <div class="ib-nav" style="display:none;">
           <span class="ib-nav-prev">Previous</span>
@@ -40,89 +41,68 @@
     </script>
   </head>
   <body>
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">samrat Weds Kavita</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Gallery</a></li>
-            <li><a href="#contact">Wishes</a></li>
-            <li><a href="#contact">Venue</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div><!-- Fixed navbar -->
     <!-- Header -->
     <div id="header" class="header">
       <span class="right_ab">
         <a href="http://creativecommons.org/licenses/by/2.0/deed.en_GB" target="_blank">CC BY 2.0</a>
-        <a href="http://tympanus.net/codrops/2011/10/07/draggable-image-boxes-grid/"><strong>Created by Mari Lou</strong></a>
+        <a href="http://tympanus.net/codrops/2011/10/07/draggable-image-boxes-grid/"><strong>by Mari Lou</strong></a>
       </span>
     </div>
     <!-- Header Ends-->
-    <!-- <div id="ib-top" class="ib-top">
-      <h1>Samrat <span>Weds</span> Kavita</h1>
-    </div> -->
+    <div id="ib-top" class="ib-top">
+      <span>Samrat <span>Weds</span> Kavita</span>
+      <span class="pl20"><a href="index.html">Go Home</a></span>
+    </div>
     <div id="ib-main-wrapper" class="ib-main-wrapper">
       <div class="ib-main">
-        <a href="#"><img src="img/thumbs/sk-001.jpg" data-largesrc="img/large/sk-001.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-002.jpg" data-largesrc="img/large/sk-002.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-003.jpg" data-largesrc="img/large/sk-003.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-004.jpg" data-largesrc="img/large/sk-004.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-005.jpg" data-largesrc="img/large/sk-005.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-006.jpg" data-largesrc="img/large/sk-006.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-007.jpg" data-largesrc="img/large/sk-007.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-008.jpg" data-largesrc="img/large/sk-008.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-009.jpg" data-largesrc="img/large/sk-009.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-010.jpg" data-largesrc="img/large/sk-010.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-011.jpg" data-largesrc="img/large/sk-011.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-012.jpg" data-largesrc="img/large/sk-012.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-013.jpg" data-largesrc="img/large/sk-013.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-014.jpg" data-largesrc="img/large/sk-014.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-015.jpg" data-largesrc="img/large/sk-015.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-016.jpg" data-largesrc="img/large/sk-016.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-017.jpg" data-largesrc="img/large/sk-017.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-018.jpg" data-largesrc="img/large/sk-018.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-019.jpg" data-largesrc="img/large/sk-019.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-020.jpg" data-largesrc="img/large/sk-020.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-021.jpg" data-largesrc="img/large/sk-021.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-022.jpg" data-largesrc="img/large/sk-022.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-023.jpg" data-largesrc="img/large/sk-023.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-024.jpg" data-largesrc="img/large/sk-024.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-025.jpg" data-largesrc="img/large/sk-025.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-026.jpg" data-largesrc="img/large/sk-026.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-027.jpg" data-largesrc="img/large/sk-027.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-028.jpg" data-largesrc="img/large/sk-028.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-029.jpg" data-largesrc="img/large/sk-029.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-030.jpg" data-largesrc="img/large/sk-030.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-031.jpg" data-largesrc="img/large/sk-031.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-032.jpg" data-largesrc="img/large/sk-032.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-033.jpg" data-largesrc="img/large/sk-033.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-034.jpg" data-largesrc="img/large/sk-034.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-035.jpg" data-largesrc="img/large/sk-035.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-036.jpg" data-largesrc="img/large/sk-036.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-037.jpg" data-largesrc="img/large/sk-037.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-038.jpg" data-largesrc="img/large/sk-038.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-039.jpg" data-largesrc="img/large/sk-039.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-040.jpg" data-largesrc="img/large/sk-040.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-041.jpg" data-largesrc="img/large/sk-041.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-042.jpg" data-largesrc="img/large/sk-042.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-043.jpg" data-largesrc="img/large/sk-043.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-044.jpg" data-largesrc="img/large/sk-044.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-045.jpg" data-largesrc="img/large/sk-045.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-046.jpg" data-largesrc="img/large/sk-046.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-047.jpg" data-largesrc="img/large/sk-047.jpg" alt="image01"/><span></a>
-        <a href="#"><img src="img/thumbs/sk-048.jpg" data-largesrc="img/large/sk-048.jpg" alt="image01"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-001.jpg" data-largesrc="img/large/sk-001.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-002.jpg" data-largesrc="img/large/sk-002.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-003.jpg" data-largesrc="img/large/sk-003.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-004.jpg" data-largesrc="img/large/sk-004.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-005.jpg" data-largesrc="img/large/sk-005.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-006.jpg" data-largesrc="img/large/sk-006.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-007.jpg" data-largesrc="img/large/sk-007.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-008.jpg" data-largesrc="img/large/sk-008.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-009.jpg" data-largesrc="img/large/sk-009.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-010.jpg" data-largesrc="img/large/sk-010.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-011.jpg" data-largesrc="img/large/sk-011.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-012.jpg" data-largesrc="img/large/sk-012.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-013.jpg" data-largesrc="img/large/sk-013.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-014.jpg" data-largesrc="img/large/sk-014.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-015.jpg" data-largesrc="img/large/sk-015.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-016.jpg" data-largesrc="img/large/sk-016.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-017.jpg" data-largesrc="img/large/sk-017.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-018.jpg" data-largesrc="img/large/sk-018.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-019.jpg" data-largesrc="img/large/sk-019.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-020.jpg" data-largesrc="img/large/sk-020.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-021.jpg" data-largesrc="img/large/sk-021.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-022.jpg" data-largesrc="img/large/sk-022.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-023.jpg" data-largesrc="img/large/sk-023.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-024.jpg" data-largesrc="img/large/sk-024.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-025.jpg" data-largesrc="img/large/sk-025.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-026.jpg" data-largesrc="img/large/sk-026.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-027.jpg" data-largesrc="img/large/sk-027.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-028.jpg" data-largesrc="img/large/sk-028.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-029.jpg" data-largesrc="img/large/sk-029.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-030.jpg" data-largesrc="img/large/sk-030.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-031.jpg" data-largesrc="img/large/sk-031.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-032.jpg" data-largesrc="img/large/sk-032.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-033.jpg" data-largesrc="img/large/sk-033.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-034.jpg" data-largesrc="img/large/sk-034.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-035.jpg" data-largesrc="img/large/sk-035.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-036.jpg" data-largesrc="img/large/sk-036.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-037.jpg" data-largesrc="img/large/sk-037.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-038.jpg" data-largesrc="img/large/sk-038.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-039.jpg" data-largesrc="img/large/sk-039.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-040.jpg" data-largesrc="img/large/sk-040.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-041.jpg" data-largesrc="img/large/sk-041.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-042.jpg" data-largesrc="img/large/sk-042.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-043.jpg" data-largesrc="img/large/sk-043.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-044.jpg" data-largesrc="img/large/sk-044.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-045.jpg" data-largesrc="img/large/sk-045.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-046.jpg" data-largesrc="img/large/sk-046.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-047.jpg" data-largesrc="img/large/sk-047.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
+        <a href="#"><img src="img/thumbs/sk-048.jpg" data-largesrc="img/large/sk-048.jpg" class="img-responsive" alt="samrat weds kavita"/><span></a>
         
         <div class="clr"></div>
       </div><!-- ib-main -->
