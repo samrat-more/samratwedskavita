@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link href="dist/css/jquery.countdown.min.css" rel="stylesheet">
     <link href="dist/css/app.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,26 +50,48 @@
         </div>
       </aside>
       <div class="row">
-        <div class=".col-xs-12 .col-sm-12 .col-md-12 text-center sk-hero">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center sk-hero">
           Samrat</div>
-        <div class=".col-xs-12 .col-sm-12 .col-md-12 text-center sk-hero-sub">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center sk-hero-sub">
           Weds
         </div>
-        <div class=".col-xs-12 .col-sm-12 .col-md-12 text-center sk-hero">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center sk-hero">
           Kavita
         </div>
       </div>
       <div class="row">
-        <div class=".col-xs-12 .col-sm-12 .col-md-12 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <h1>9<sup>TH</sup> MARCH, 2014</h1>
         </div>
       </div>
       <div class="row">
-        <div class=".col-xs-12 .col-sm-12 .col-md-12 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
           <div id="countdown"></div>
         </div>
       </div>
     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="text-center">
+          <div class="col-md-3 amethyst">
+            <a href="index.html">
+              Home
+            </a></div>
+          <div class="col-md-3 peter-river">
+            <a href="gallery.html">
+              Gallery
+            </a></div>
+          <div class="col-md-3 sun-flower">
+            <a href="">
+              Testimonials
+            </a></div>
+          <div class="col-md-3 emerald">
+            <a href="">Venue</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
     <div id='map-canvas'></div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -89,6 +112,7 @@
           zoomControl: false,
           scrollwheel: false,
           navigationControl: true,
+          draggable: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
