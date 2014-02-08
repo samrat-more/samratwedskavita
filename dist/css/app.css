@@ -209,6 +209,10 @@ body {
   width: 100%;
 }
 
+#map-canvas a {
+  color: #e74c3c;
+}
+
 /* gallery fixes */
 
 .ib-top {
@@ -227,6 +231,10 @@ body {
 /* margin padding classes */
 .pl20 {
   padding-left: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
 }
 
 
@@ -266,4 +274,8 @@ nav div.sun-flower:hover {
 
 nav div.emerald:hover {
   border-bottom: 8px solid #259B57;
+}
+
+.robo {
+  font-family: 'Roboto', sans-serif;
 }
