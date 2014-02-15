@@ -279,3 +279,9 @@ nav div.emerald:hover {
 .robo {
   font-family: 'Roboto', sans-serif;
 }
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-shadow: 0px 2px 3px #555;
+}
